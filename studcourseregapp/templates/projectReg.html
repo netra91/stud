@@ -1,0 +1,17 @@
+{% extends 'basictemplate.html' %}
+{% block title %} project register page {% endblock%}
+{% block content%}
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table border="1">
+            {{ form.as_table}}
+        <tr>
+            <td>
+                <input type="submit" value="Add Project"
+            </td>
+           
+        </tr>
+
+    </table>
+</form>
+{% endblock %}

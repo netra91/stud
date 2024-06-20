@@ -1,0 +1,26 @@
+{% extends 'basictemplate.html' %}
+{% block title %} Course List {% endblock %}
+
+{% block content %}
+<h1> course list</h1>
+<table border="1">
+    <tr>
+        <th>
+            sub code
+        </th>
+        <th>
+            sub name
+        </th>
+        <th>
+            credits
+        </th>
+    </tr>
+    {% for c in course_list %}
+    <tr>
+        <td>{{c.courseCode}}</td>
+        <td>{{c.courseName}}</td>
+        <td>{{c.Coursecredits}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

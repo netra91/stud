@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %} {% endblock %}
+        </title>
+    </head>
+    <body>
+        <CENTER><h1 style="background-color:blue;color:blanchedalmond">STUDENT COURSE REGISTRATION PORTAL</h1></CENTER>
+        
+        <nav>
+            <a href="/home/">HOME</a>
+            <a href="/studentlist/">STUDENT LIST</a>
+            <a href="/courselist/">COURSE LIST</a>
+            <a href="/regi/"> Register</a>
+            <a href="/enrolled/">Enrolled List</a>
+            <a href="/addproject/"> ADD Project</a>
+           
+        </nav>
+    
+        <section>
+        {% block content %}
+        {% endblock %}
+    </section>
+    <footer>
+        <hr/>
+        <center>
+            &copy; designed and developed by Prof. N.P. Belagali, Dept of CSE, BGMIT, Mudhol
+        </center>
+    </footer>
+    
+    </body>
+</html>
